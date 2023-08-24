@@ -1,0 +1,20 @@
+.header{
+background-color: rgb(33, 74, 82);
+}
+.navbar{
+background-color: #0d303d;
+}
+.navitem li:hover {
+    border:1px solid lightgray;
+    border-radius: 20px;
+    padding: 0px 5px;
+    margin:0px 10px;
+    /* background-color: rgb(33, 74, 82); */
+}
+
+
+/* .link >ul >li:hover{
+border:none;
+background-color:none;
+} */ 
+

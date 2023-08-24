@@ -1,0 +1,24 @@
+1. Home 
+    i.   Intro of CoUSC
+    ii.  Categories
+    iii. Recent Post 
+    iv.  Important Links
+2. CoUSC Administration 
+3. CoUSC Members
+4. Post Page 
+5. Notice Board
+6. Contact Us 
+7. Events 
+8. Admin Panel 
+9. Our Activities -> Home
+10. Gallary 
+
+Navbar -->
+1. Home
+2. Notice Board
+3. Events
+4. Gallary 
+5. Member
+6. Admin
+7. Contact Us
+
