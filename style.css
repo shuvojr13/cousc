@@ -1,3 +1,7 @@
+*{
+    padding:0;
+    margin:0;
+}
 .header{
 background-color: rgb(33, 74, 82);
 }
@@ -5,16 +9,27 @@ background-color: rgb(33, 74, 82);
 background-color: #0d303d;
 }
 .navitem li:hover {
-    border:1px solid lightgray;
+    border:1px solid gray;
     border-radius: 20px;
     padding: 0px 5px;
     margin:0px 10px;
     /* background-color: rgb(33, 74, 82); */
 }
 
-
-/* .link >ul >li:hover{
+#link:hover{
 border:none;
 background-color:none;
-} */ 
+}
+#link ul li:hover{
+    border:none;
+    background-color:none;
+}
+/* #hero{
+background-image: url('assets/imgcou.jpg');
+} */
 
+
+
+
+
+    
