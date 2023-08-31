@@ -19,6 +19,8 @@ Navbar -->
 3. Events
 4. Gallary 
 5. Member
+    Admin Member
+    Club Member 
 6. Admin
 7. Contact Us
 
