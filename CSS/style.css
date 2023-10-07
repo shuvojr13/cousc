@@ -12,9 +12,9 @@ background-color: #0d303d;
 .navitem li:hover {
     border:1px solid gray;
     border-radius: 20px;
-    padding: 0px 5px;
-    margin:0px 10px;
-    /* background-color: rgb(33, 74, 82); */
+    padding: 0px 2px;
+    margin:0px 5px;
+    background-color: rgb(33, 74, 82);
 }
 
 #link:hover{

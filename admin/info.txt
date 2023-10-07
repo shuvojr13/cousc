@@ -1,0 +1,7 @@
+Create a database cousc 
+create table 
+    1. event 
+    2. notice 
+    3. member ( administration )
+    4. admin ( admin login ) 
+    5. member ( registered ) 
