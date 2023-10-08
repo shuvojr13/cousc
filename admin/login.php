@@ -39,6 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (validateAdminLogin($username, $password, $conn)) {
         $_SESSION["login_error"] = false;
+        $_SESSION["login"] = true;
+        
         header('Location: admin.php');
         exit;
 

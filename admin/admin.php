@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if($_SESSION["login"] == false){
+    header('Location: home.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,6 +66,7 @@
                   document.getElementById('root').innerHTML = text;
                 }
                 function logOut(){
+                    <?php  $_SESSION["login"] = false; ?>
                     window.location.href = "../home.php";
                 }
                 function Clear(){

@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
     echo "<table class='table table-light table-bordered text-center table-hover shadow-lg p-3'> ";
     echo "<tr><th>Title</th><th>Description</th><th>Image</th><th>Date</th><th>Delete</th></tr>";
     while ($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["title"] . "</td><td>" . $row["description"] . "</td><td>" . $row["image"] . "</td><td>" . $row["date"] . "</td><td><a href='delete.php?id=$row[id]' class='btn btn-danger'>Delete</a></td></tr>";
+        echo "<tr><td>" . $row["title"] . "</td><td>" . $row["description"] . "</td><td><img src='images/" . $row["image"] . "'alt='' class='h-25 w-25'/></td><td>" . $row["date"] . "</td><td><a href='delete.php?id=$row[id]' class='btn btn-danger'>Delete</a></td></tr>";
     }
     echo "</table>";
 } else {

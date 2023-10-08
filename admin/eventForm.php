@@ -1,3 +1,4 @@
+<?php error_reporting(0) ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +52,7 @@
 <body>
 <div class="container mt-4 p-3 border border-3 border-primary">
   <h2 class="text-center mb-4 text-white p-2 bg-dark rounded fw-bold">Admin Event Form</h2>
-  <form class="bg-light rounded p-2" action="" method="post">
+  <form class="bg-light rounded p-2" action="eventForm.php" method="post" enctype="multipart/form-data">
     <div class="form-group p-3">
       <label for="eventTitle">Event Title</label>
       <input type="text" class="form-control" id="eventTitle" name="title" required>
@@ -87,13 +88,15 @@ $db = new PDO('mysql:host=localhost;dbname=cousc', 'root', '');
 // Get the form data
 $title = $_POST['title'];
 $description = $_POST['description'];
-$image = $_POST['image'];
+$image = $_FILES['image']['name'];
 $date = $_POST['date'];
 
-
+ //$upload_dir = "images";
   // Create an SQL INSERT statement
   $sql = "INSERT INTO event (title, description, image, date) VALUES (:title, :description, :image, :date)";
 
+  
+  
   // Prepare the SQL statement
   $stmt = $db->prepare($sql);
   $stmt->bindParam(':title', $title);
@@ -101,22 +104,8 @@ $date = $_POST['date'];
   $stmt->bindParam(':image', $image);
   $stmt->bindParam(':date', $date);
   $stmt->execute();
-
-
-// Create an SQL INSERT statement
-// $sql = "INSERT INTO event (title, description, image, date) VALUES (:title, :description, :image, :date)";
-
-// // Prepare the SQL statement
-// $stmt = $db->prepare($sql);
-
-// // Bind the form data to the SQL statement
-// $stmt->bindParam(':title', $title);
-// $stmt->bindParam(':description', $description);
-// $stmt->bindParam(':image', $image);
-// $stmt->bindParam(':date', $date);
-
-// // Execute the SQL statement
-// $stmt->execute();
+  
+  move_uploaded_file($_FILES['image']['tmp_name'], "images/$image");
 
 
 
