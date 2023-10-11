@@ -20,5 +20,8 @@ CREATE TABLE admins (
     password VARCHAR(255) NOT NULL
 );
 
+INSERT INTO admins (username, password) VALUES ('admin', 'cou');
+
+
 
 

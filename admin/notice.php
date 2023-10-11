@@ -17,14 +17,14 @@ $sql = "SELECT * FROM notice";
 $result = $conn->query($sql);
 ?>
         <div class="d-flex justify-content-center align-items-center m-4 p-4">
-            <a href="eventForm.php" class="btn btn-dark fs-3 px-4 fw-bold border border-4 border-warning">Add Notice</a>
+            <a href="noticeForm.php" class="btn btn-primary fs-3 px-4 fw-bold">Add Notice</a>
         </div>
 <?php
 if ($result->num_rows > 0) {
     echo "<table class='table table-light table-bordered text-center table-hover shadow-lg p-3'> ";
     echo "<tr><th>Title</th><th>Description</th><th>Delete</th></tr>";
     while ($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["title"] . "</td><td>" . $row["description"] ."</td><td><a href='deleteNotice.php?id=$row[id]' class='btn btn-danger'>Delete</a></td></tr>";
+        echo "<tr><td>" . $row["title"] . "</td><td>" . $row["date"] ."</td><td><a href='deleteNotice.php?id=$row[id]' class='btn btn-danger'>Delete</a></td></tr>";
     }
     echo "</table>";
 } else {

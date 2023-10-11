@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
-  <title>Gallary</title>
+  <title>Events</title>
 </head>
 <body>
       <div
@@ -62,14 +62,12 @@
             <a class="nav-link text-white" href="eventPage.php">Events</a>
           </li>
           <li class="nav-item fs-4 px-3 text-center">
-            <a class="nav-link text-white" href="#">Member</a>
+            <a class="nav-link text-white" href="memeberPage.php">Member</a>
           </li>
           <li class="nav-item fs-4 px-3 text-center">
-            <a class="nav-link text-white" href="#">Gallary</a>
+            <a class="nav-link text-white" href="gallaryPage.php">Gallary</a>
           </li>
-          <li class="nav-item fs-4 px-3 text-center mb-2">
-            <a class="nav-link text-white" href="#">Contact Us</a>
-          </li>
+          
           <li class="nav-item fs-4 px-3 text-center">
             <a class="nav-link text-white" href="admin/adminLogin.php">Admin</a>
           </li>
