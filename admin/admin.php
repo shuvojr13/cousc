@@ -1,8 +1,11 @@
 <?php 
 session_start();
+error_reporting(0) ;
+
 if($_SESSION["login"] == false){
-    header('Location: home.php');
+    header('Location: ../home.php');
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +49,7 @@ if($_SESSION["login"] == false){
                 <ul class="list-unstyled d-flex flex-column">
                     <li class="mx-3 btn btn-success  fw-bold px-2 py-1 my-1" onclick="Clear()"><i class="bi bi-person-bounding-box px-2"></i> Admin </li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="events()"><i class="bi bi-caret-right-fill px-2"></i>Events</li>
-                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Notices</li>
+                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="notices()"><i class="bi bi-caret-right-fill px-2"></i>Notices</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Admin Member</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Administration Member</li>
                     <li class="mx-3 btn btn-danger  fw-bold px-2 py-1 my-1" onclick="logOut()"><i class="bi bi-box-arrow-in-right px-2"></i>Log Out</li>
@@ -65,8 +68,14 @@ if($_SESSION["login"] == false){
                 
                   document.getElementById('root').innerHTML = text;
                 }
+                async function notices() {
+                  const response = await fetch('notice.php');
+                  const text = await response.text();
+                
+                  document.getElementById('root').innerHTML = text;
+                }
                 function logOut(){
-                    <?php  $_SESSION["login"] = false; ?>
+                    <?php // $_SESSION["login"] = false; ?>
                     window.location.href = "../home.php";
                 }
                 function Clear(){

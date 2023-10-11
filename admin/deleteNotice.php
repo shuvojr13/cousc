@@ -4,7 +4,7 @@ session_start();
 $conn = mysqli_connect('localhost', 'root', '', 'cousc');
 
 // Create the SQL query to delete the row
-$sql = "DELETE FROM event WHERE id = ?";
+$sql = "DELETE FROM notice WHERE id = ?";
 
 // Prepare the query statement
 $stmt = mysqli_prepare($conn, $sql);

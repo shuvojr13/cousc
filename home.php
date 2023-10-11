@@ -78,13 +78,10 @@ $_SESSION["login"] = false;
                 <a class="nav-link text-white" href="eventPage.php">Events</a>
               </li>
               <li class="nav-item fs-4 px-3 text-center">
-                <a class="nav-link text-white" href="#">Member</a>
+                <a class="nav-link text-white" href="memeberPage.php">Member</a>
               </li>
               <li class="nav-item fs-4 px-3 text-center">
                 <a class="nav-link text-white" href="gallaryPage.php">Gallary</a>
-              </li>
-              <li class="nav-item fs-4 px-3 text-center mb-2">
-                <a class="nav-link text-white" href="#">Contact Us</a>
               </li>
               <li class="nav-item fs-4 px-3 text-center">
                 <a class="nav-link text-white" href="admin/adminLogin.php">Admin</a>
@@ -143,14 +140,14 @@ $_SESSION["login"] = false;
             </div>
             <div class="carousel-item">
               <img
-                src="assets/imgcou.jpg"
+                src="gallary/24.jpeg"
                 class="d-block w-100 rounded"
                 alt="..."
               />
             </div>
             <div class="carousel-item">
               <img
-                src="assets/imgcou.jpg"
+                src="gallary/19.jpeg"
                 class="d-block w-100 rounded"
                 alt="..."
               />
@@ -204,6 +201,9 @@ $_SESSION["login"] = false;
         background-image: url('assets/bg3.gif');
         background-repeat: no-repeat;
         background-size: cover;
+        }
+        .bg-footer{
+          background-color:rgb(32, 7, 56);
         }
       </style>
       <div
@@ -443,7 +443,7 @@ $_SESSION["login"] = false;
       
 
       <footer>
-        <div class="container-fluid bg-dark text-white p-5">
+        <div class="container-fluid bg-footer text-white p-5">
           <div
             class="row row-cols-1 d-flex align-items-center justify-content-center"
           >

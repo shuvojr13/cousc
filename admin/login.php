@@ -1,6 +1,7 @@
 <?php
-     error_reporting(0) ;
      session_start();
+     error_reporting(0) ;
+     
     $conn = new mysqli("localhost","root","","cousc");
 
     if ($conn->connect_error)

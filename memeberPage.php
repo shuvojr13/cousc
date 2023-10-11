@@ -65,10 +65,7 @@
             <a class="nav-link text-white" href="#">Member</a>
           </li>
           <li class="nav-item fs-4 px-3 text-center">
-            <a class="nav-link text-white" href="#">Gallary</a>
-          </li>
-          <li class="nav-item fs-4 px-3 text-center mb-2">
-            <a class="nav-link text-white" href="#">Contact Us</a>
+            <a class="nav-link text-white" href="gallaryPage.php">Gallary</a>
           </li>
           <li class="nav-item fs-4 px-3 text-center">
             <a class="nav-link text-white" href="admin/adminLogin.php">Admin</a>
@@ -89,36 +86,36 @@
     </div>
   </nav>
   <!-- Ended Header -->
-   <div class="container my-4 shadow-lg p-2 rounded">
-      <h2 class="p-2 text-center bg-light rounded fw-bold fs-1">Executive Comittee 2022-23</h2>
+   <div class="container  my-4 shadow-lg p-2 rounded bg-white">
+      <h1 class="p-2 text-center bg-dark text-white rounded fw-bold fs-1">Executive Comittee 2022-23</h1>
       <div class="row row-cols-1 d-flex justify-content-around">
-          <img src="/comittee/1.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4  border-success">
-          <img src="/comittee/2.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/3.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/4.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/5.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/6.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/7.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/8.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/9.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/10.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/11.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/12.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/13.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/14.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/15.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/16.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/17.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/18.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/19.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/20.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/21.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/22.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/23.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/24.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/25.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/26.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
-          <img src="/comittee/27.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/1.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4  border-success">
+          <img src="comittee/2.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/3.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/4.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/5.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/6.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/7.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/8.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/9.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/10.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/11.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/12.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/13.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/14.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/15.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/16.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/17.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/18.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/19.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/20.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/21.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/22.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/23.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/24.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/25.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/26.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
+          <img src="comittee/27.jpg" alt="" class="col col-md-5 m-2 rounded shadow-sm border border-4 border-success">
       </div>
    </div>
    <footer>

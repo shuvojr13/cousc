@@ -1,4 +1,6 @@
-<?php error_reporting(0) ?>
+<?php error_reporting(0); 
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +75,7 @@
             <p>Forgot password? <a href="#">Reset here</a></p>
         </form>
         <?php 
-            session_start();
+            
             if($_SESSION["login_error"]){
                 echo '<p class="fw-bold fs-3"> Invalid Username or Password , Please Try Again </p>';
             }
