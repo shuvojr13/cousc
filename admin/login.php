@@ -2,12 +2,7 @@
      session_start();
      error_reporting(0) ;
      
-    $conn = new mysqli("localhost","root","","cousc");
-
-    if ($conn->connect_error)
-    {
-        die ("Connection failed: ".$conn->connect_error);
-    }
+     require_once "database.php";
 
 
 

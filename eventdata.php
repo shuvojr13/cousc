@@ -1,7 +1,6 @@
 <?php
 
-// Connect to your database
-$db = new PDO('mysql:host=localhost;dbname=cousc', 'root', '');
+require_once "database.php";
 
 // Get all events from the database
 $sql = 'SELECT title, description, image, date FROM event';

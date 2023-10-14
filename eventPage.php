@@ -51,7 +51,7 @@
             <a
               class="nav-link active fs-4 px-3 text-center"
               aria-current="page"
-              href="home.php"
+              href="index.php"
               >Home</a
             >
           </li>

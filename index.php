@@ -445,21 +445,30 @@ $_SESSION["login"] = false;
       <footer>
         <div class="container-fluid bg-footer text-white p-5">
           <div
-            class="row row-cols-1 d-flex align-items-center justify-content-center"
+            class="row row-cols-1 d-flex align-items-center justify-content-around"
           >
-            <div class="col col-md-3 p-3">
+            <div class="col col-md-3">
               <h4 class="fw-bold text-center p-1 border border-light rounded">
                 <i><i class="bi bi-link-45deg"></i> Quick Links</i>
               </h4>
               <ul class="list-unstyled text-center">
-                <li><a href="#" class="custom-link">Events</a></li>
-                <li><a href="#" class="custom-link">Notices</a></li>
-                <li><a href="#" class="custom-link">Activities</a></li>
-                <li><a href="#" class="custom-link">Member</a></li>
+                <li><a href="eventPage.php" class="custom-link">Events</a></li>
+                <li><a href="noticePage.php" class="custom-link">Notices</a></li>
+                <li><a href="gallaryPage.php" class="custom-link">Gallary</a></li>
+                <li><a href="memeberPage.php" class="custom-link">Member</a></li>
+                <li><a href="memeberPage.php" class="custom-link">About</a></li>
+                <li><a href="memeberPage.php" class="custom-link">Activities</a></li>
               </ul>
             </div>
             <!-- Here We Work -->
-            <div class="col col-md-3"></div>
+            <div class="col col-md-3 d-flex flex-column justify-content-center">
+              <h4 class="fw-bold text-center p-1 border border-light rounded">
+                <i><i class="bi bi-link-45deg"></i> Developers Team</i>
+                
+              </h4>
+              <a href="developer.php" class="btn btn-primary my-1 mx-4 fw-bold">Visit</a><hr>
+              <img src="assets/footer.png" alt="Image" class="w-100  rounded-circle border border-light">
+            </div>
             <!-- Contact -->
             <div class="col col-md-3">
               <h4 class="fw-bold text-center p-1 border border-light rounded">

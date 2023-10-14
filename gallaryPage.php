@@ -51,7 +51,7 @@
             <a
               class="nav-link active fs-4 px-3 text-center"
               aria-current="page"
-              href="home.php"
+              href="index.php"
               >Home</a
             >
           </li>
@@ -62,14 +62,12 @@
             <a class="nav-link text-white" href="eventPage.php">Events</a>
           </li>
           <li class="nav-item fs-4 px-3 text-center">
-            <a class="nav-link text-white" href="#">Member</a>
+            <a class="nav-link text-white" href="memeberPage.php">Member</a>
           </li>
           <li class="nav-item fs-4 px-3 text-center">
             <a class="nav-link text-white" href="#">Gallary</a>
           </li>
-          <li class="nav-item fs-4 px-3 text-center mb-2">
-            <a class="nav-link text-white" href="#">Contact Us</a>
-          </li>
+          
           <li class="nav-item fs-4 px-3 text-center">
             <a class="nav-link text-white" href="admin/adminLogin.php">Admin</a>
           </li>
@@ -175,52 +173,56 @@
     </div>
   </div>
   <footer>
-    <div class="container-fluid bg-dark text-white p-5">
-      <div
-        class="row row-cols-1 d-flex align-items-center justify-content-center"
-      >
-        <div class="col col-md-3 p-3">
-          <h4 class="fw-bold text-center p-1 border border-light rounded">
-            <i><i class="bi bi-link-45deg"></i> Quick Links</i>
-          </h4>
-          <ul class="list-unstyled text-center">
-            <li><a href="#" class="custom-link">Events</a></li>
-            <li><a href="#" class="custom-link">Notices</a></li>
-            <li><a href="#" class="custom-link">Activities</a></li>
-            <li><a href="#" class="custom-link">Member</a></li>
-          </ul>
-        </div>
-        <!-- Here We Work -->
-        <div class="col col-md-3"></div>
-        <!-- Contact -->
-        <div class="col col-md-3">
-          <h4 class="fw-bold text-center p-1 border border-light rounded">
-            <i class="bi bi-caret-right-fill"></i> <i>Follow Us</i>
-          </h4>
-          <div class="text-center">
-            <i class="bi bi-facebook px-2"></i>
-            <i class="bi bi-linkedin px-2"></i>
-            <i class="bi bi-twitter px-2"></i>
-            <i class="bi bi-instagram px-2"></i>
+        <div class="container-fluid bg-footer text-white p-5">
+          <div
+            class="row row-cols-1 d-flex align-items-center justify-content-around"
+          >
+            <div class="col col-md-3">
+              <h4 class="fw-bold text-center p-1 border border-light rounded">
+                <i><i class="bi bi-link-45deg"></i> Quick Links</i>
+              </h4>
+              <ul class="list-unstyled text-center">
+                <li><a href="#" class="custom-link">Events</a></li>
+                <li><a href="#" class="custom-link">Notices</a></li>
+                <li><a href="#" class="custom-link">Activities</a></li>
+                <li><a href="#" class="custom-link">Member</a></li>
+              </ul>
+            </div>
+            <!-- Here We Work -->
+            <div class="col col-md-3">
+              <img src="assets/footer.png" alt="Image" class="w-75  rounded-circle border border-light">
+            </div>
+            <!-- Contact -->
+            <div class="col col-md-3">
+              <h4 class="fw-bold text-center p-1 border border-light rounded">
+                <i class="bi bi-caret-right-fill"></i> <i>Follow Us</i>
+              </h4>
+              <div class="text-center">
+                <i class="bi bi-facebook px-2"></i>
+                <i class="bi bi-linkedin px-2"></i>
+                <i class="bi bi-twitter px-2"></i>
+                <i class="bi bi-instagram px-2"></i>
+              </div>
+              <hr />
+              <h4 class="fw-bold text-center p-1 border border-light rounded">
+                <i class="bi bi-caret-right-fill"></i> <i>Contact Us</i>
+              </h4>
+              <div class="text-center">
+                <ul class="list-unstyled text-center">
+                  <li><i class="bi bi-envelope-at"></i> cousc@gmail.com</li>
+                  <li><i class="bi bi-telephone-fill"></i> 8801714-777777</li>
+                  <li><i class="bi bi-whatsapp"></i> 8801717-565656</li>
+                  <li><i class="bi bi-browser-chrome"></i> www.cousc.com</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <hr />
-          <h4 class="fw-bold text-center p-1 border border-light rounded">
-            <i class="bi bi-caret-right-fill"></i> <i>Contact Us</i>
-          </h4>
-          <div class="text-center">
-            <ul class="list-unstyled text-center">
-              <li><i class="bi bi-envelope-at"></i> cousc@gmail.com</li>
-              <li><i class="bi bi-telephone-fill"></i> 8801714-777777</li>
-              <li><i class="bi bi-whatsapp"></i> 8801717-565656</li>
-              <li><i class="bi bi-browser-chrome"></i> www.cousc.com</li>
-            </ul>
-          </div>
+          <p class="text-center">Copyright &copy; CoUSC | Developed by Shuvo</p>
         </div>
-      </div>
-      <hr />
-      <p class="text-center">Copyright &copy; CoUSC | Developed by Shuvo</p>
-    </div>
-  </footer>
+      </footer>
+
+
   <style>
     body {
       background-image: url("assets/bgimg.jpg");
@@ -252,6 +254,9 @@
     background-image: url('assets/bg3.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    }
+    .bg-footer{
+      background-color:rgb(32, 7, 56);
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

@@ -1,17 +1,9 @@
 <?php
 session_start();
-$servername = "localhost"; 
-$username = "root"; 
-$password = ""; 
-$dbname = "cousc"; 
 
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once "database.php";
+
 
 $sql = "SELECT * FROM event";
 $result = $conn->query($sql);

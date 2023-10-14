@@ -76,7 +76,7 @@ if($_SESSION["login"] == false){
                 }
                 function logOut(){
                     <?php // $_SESSION["login"] = false; ?>
-                    window.location.href = "../home.php";
+                    window.location.href = "../index.php";
                 }
                 function Clear(){
                     document.getElementById('root').innerHTML = "";

@@ -1,18 +1,14 @@
 
-
-
-var canJump = function(a) { 
-   let n = a.length ;
-   let mx = 0;
-   for(let i = 0 ; i < n ; i++){
-     mx = Math.max(mx,a[i]+i);
-
-    if(mx >= n-1){
-        return true ;
+var rotate = function (a, k) {
+    for (let i = a.length - 1; i >= 0; i--) {
+      a[i + k] = a[i];
     }
-    if(mx <= i && a[i] == 0) return false ;
-}
-    
-};
-let a = [0,1];
-console.log(canJump(a));
+    console.log(a);
+    for (let j = k - 1; j >= 0; j--) {
+      a[j] = a.pop();
+      console.log(a);
+    }
+    //console.log(a);
+  };
+let a = [1,2,3],k = 4;
+console.log(rotate(a,k));

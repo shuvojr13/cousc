@@ -80,8 +80,7 @@
 
 <?php
 
-// Connect to the database
-$db = new PDO('mysql:host=localhost;dbname=cousc', 'root', '');
+require_once "database.php";
 
 
 

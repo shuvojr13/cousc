@@ -1,8 +1,7 @@
 <?php
 session_start();
 // Connect to the database
-$conn = mysqli_connect('localhost', 'root', '', 'cousc');
-
+require_once "database.php";
 // Create the SQL query to delete the row
 $sql = "DELETE FROM event WHERE id = ?";
 
