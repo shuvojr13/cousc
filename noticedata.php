@@ -1,18 +1,21 @@
 <?php
 
-require_once "database.php";
+require_once "config.php";
 
 // Get all events from the database
 $sql = 'SELECT * FROM notice';
-$stmt = $db->prepare($sql);
+$stmt = $conn->prepare($sql);
 $stmt->execute();
 $events = $stmt->fetchAll();
 
-echo '<div class="container row row-cols-1 d-flex justify-content-center my-3  p-4 rounded">';
+echo '<div class="container row row-cols-1  d-flex justify-content-center align-items-center my-3  p-4 rounded">';
+if(!$events){
+    echo "<p class='text-center fw-bold bg-light p-2 fs-1'>No notices found.</p>";
+}
 // Render the events data
 foreach ($events as $event) {
    
-    echo '<div class="col col-md-6  border border-3 border-dark rounded m-2 p-3  shadow">';
+    echo '<div class="col col-md-6 bgn-color  border border-3 border-dark rounded m-2 p-3  shadow-lg">';
     //echo '<img src="admin/images/' . $event['image'] . '" alt="' . $event['title'] . '" class="w-100" />';
     echo '<h2 class="title text-white fw-bold  p-2 rounded text-center m-1">' . $event['title'] . '</h2>';
     echo '<p class="text-justify p-2 bg-light rounded m-1">' . $event['description'] . '</p>';

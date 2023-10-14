@@ -3,7 +3,7 @@ session_start();
 error_reporting(0) ;
 
 if($_SESSION["login"] == false){
-    header('Location: ../home.php');
+    header('Location: ../index.php');
 }
 
 ?>
@@ -30,7 +30,7 @@ if($_SESSION["login"] == false){
         background-color: #0f033a;
         }
         .bg-image{
-            background-image: url('../assets/admin.gif');
+            background-image: url('../assets/admin1.gif');
             background-repeat: no-repeat;
            background-size: cover;
             

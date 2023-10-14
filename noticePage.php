@@ -93,9 +93,14 @@
     .title {
         background: linear-gradient(45deg, rgb(84, 51, 138), rgb(51, 95, 136));
       }
+      .bgn-color{
+        background-color:rgb(223, 219, 247);
+      }
+     
 
   </style>
   <div class="">
     <h2 class="text-center p-4 fw-bold  title fs-1 text-white">Notices</h2>
      <?php include('noticedata.php'); ?>
   </div>
+  <?php include "footer.php" ?>

@@ -70,10 +70,13 @@
         <h2>Admin Login</h2>
         <form action="login.php" method="post" class="login-form">
             <input type="text" placeholder="Username" name="username" required>
-            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" id="password" placeholder="Password" name="password" required>
+            <input type="checkbox" id="show-password" onclick="togglePassword()">Show Password
+            <p class="fs-6"> Use a mix of upper and lowercase letters, numbers, and symbols for Passwords.</p>
             <button type="submit" name="submit">Login</button>
             <p>Forgot password? <a href="#">Reset here</a></p>
         </form>
+        
         <?php 
             
             if($_SESSION["login_error"]){
@@ -81,6 +84,18 @@
             }
         ?>
     </div>
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById('password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+
+    </script>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>

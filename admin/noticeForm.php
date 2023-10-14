@@ -83,7 +83,7 @@ session_start(); ?>
 
 <?php
 
-require_once "database.php";
+require_once "../config.php";
 
 if (isset($_POST['submit'])) {
     // Get the form data
@@ -100,7 +100,7 @@ if (isset($_POST['submit'])) {
     //echo $date;
 
     // Prepare the SQL statement
-    $stmt = $db->prepare($sql);
+    $stmt = $conn->prepare($sql);
     $stmt->bindParam(':title', $title);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':link', $link);

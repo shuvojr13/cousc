@@ -99,3 +99,4 @@
     <h2 class="text-center p-4 fw-bold  title fs-1 text-white">Events</h2>
      <?php include('eventdata.php'); ?>
   </div>
+  <?php include "footer.php" ?>

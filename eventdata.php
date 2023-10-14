@@ -1,14 +1,21 @@
 <?php
+error_reporting(0);
+require_once "config.php";
 
-require_once "database.php";
+//include "admin/database.php";
 
 // Get all events from the database
 $sql = 'SELECT title, description, image, date FROM event';
-$stmt = $db->prepare($sql);
+$stmt = $conn->prepare($sql);
 $stmt->execute();
 $events = $stmt->fetchAll();
 
+
+
 echo '<div class="container row row-cols-1 d-flex justify-content-center align-items-center my-3  p-4 rounded">';
+if(!$events){
+    echo "<p class='text-center fw-bold bg-light p-2 fs-1'>Stay tuned for upcoming events!</p>";
+}
 // Render the events data
 foreach ($events as $event) {
    
@@ -22,6 +29,8 @@ foreach ($events as $event) {
     
 }
 echo '</div>';
+
+
 // Close the database connection
 $db = null;
 

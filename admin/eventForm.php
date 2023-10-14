@@ -80,7 +80,7 @@
 
 <?php
 
-require_once "database.php";
+require_once "../config.php";
 
 
 
@@ -97,7 +97,7 @@ $date = $_POST['date'];
   
   
   // Prepare the SQL statement
-  $stmt = $db->prepare($sql);
+  $stmt = $conn->prepare($sql);
   $stmt->bindParam(':title', $title);
   $stmt->bindParam(':description', $description);
   $stmt->bindParam(':image', $image);
