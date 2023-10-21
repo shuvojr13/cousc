@@ -20,7 +20,7 @@
     <!-- Here We Work -->
     <div class="col col-md-3 d-flex flex-column justify-content-center">
       <h4 class="fw-bold text-center p-1 border border-light rounded">
-        <i><i class="bi bi-link-45deg"></i> Developers Team</i>
+        <i><i class="bi bi-terminal"></i> Developers Team</i>
         
       </h4>
       <a href="developer.php" class="btn btn-primary my-1 mx-4 fw-bold">Visit</a><hr>

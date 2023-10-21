@@ -9,7 +9,7 @@ $sql = "SELECT * FROM event";
 $result = $conn->query($sql);
 ?>
         <div class="d-flex justify-content-center align-items-center m-4 p-4">
-            <a href="eventForm.php" class="btn btn-primary fs-3 px-4 fw-bold">Create Events</a>
+            <a href="eventForm.php" class="btn btn-danger fs-3 px-4 fw-bold">Create Events</a>
         </div>
 <?php
 if ($result->num_rows > 0) {

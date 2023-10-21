@@ -19,7 +19,7 @@ foreach ($events as $event) {
     //echo '<img src="admin/images/' . $event['image'] . '" alt="' . $event['title'] . '" class="w-100" />';
     echo '<h2 class="title text-white fw-bold  p-2 rounded text-center m-1">' . $event['title'] . '</h2>';
     echo '<p class="text-justify p-2 bg-light rounded m-1">' . $event['description'] . '</p>';
-    echo '<a href="' . $event['link'] . '" class="btn btn-primary m-1" target="_blank">Download PDF File </a><br><hr>';
+    echo '<a href="../' . $event['link'] . '" class="btn btn-primary m-1" target="_blank">Download PDF File </a><br><hr>';
     
     echo '<span class="p-2 bg-light  text-center rounded   m-1"> Date ' . $event['date'] . '</span>';
     echo '</div>';

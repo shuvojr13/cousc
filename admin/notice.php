@@ -8,7 +8,7 @@ $sql = "SELECT * FROM notice";
 $result = $conn->query($sql);
 ?>
         <div class="d-flex justify-content-center align-items-center m-4 p-4">
-            <a href="noticeForm.php" class="btn btn-primary fs-3 px-4 fw-bold">Add Notice</a>
+            <a href="noticeForm.php" class="btn btn-danger fs-3 px-4 fw-bold">Add Notice</a>
         </div>
 <?php
 if ($result->num_rows > 0) {

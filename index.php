@@ -352,6 +352,65 @@ $_SESSION["login"] = false;
     
       <!-- Section -->
       <div class="container my-5">
+        <div class="card shadow-lg border border-2 border-danger ">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="assets/evan.jpg" class="card-img h-100 w-100" alt="Your Image" />
+            </div>
+
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fs-2 fw-bold text-danger">Professor A F M Abdul Moyeen, PhD (UK)</h5>
+                <h6 class="card-subtitle mb-2 text-muted fs-4">
+                  Chief Advisor 
+                </h6>
+                <hr />
+                <div>
+                  <div class="initial-content-evan">
+                    <p class="card-text text-justify bg-light p-2 rounded">
+                     "Welcome to the Comilla University Science Club! I'm Jahid
+                     Hossain Bhuiyan (Evan), serving as the General Secretary of
+                     the Comilla University Science Club. It is an honor to be part
+                     of this dynamic organization dedicated to fostering scientific
+                     curiosity and innovation among our university community. We
+                     are proud to be a thriving hub of scientific curiosity and
+                     exploration in the Cumilla region. Our club is dedicated to
+                     promoting a passion for science, fostering innovation, and
+                     creating a community of like-minded individuals who are
+                     enthusiastic about the wonders of the natural world.
+                    </p>
+                  </div>
+                 <div class="hidden-content hidden-content-evan">
+                   <p class="card-text text-justify bg-light p-2 rounded">
+                     At the
+                    heart of our club's mission is the belief that science is not
+                    just a subject to be studied but a journey to be embraced. We
+                    provide a platform for students, faculty, and science
+                    enthusiasts to come together, exchange ideas, and embark on
+                    exciting scientific adventures. Through our diverse range of
+                    activities, workshops, and events, we aim to inspire the next
+                    generation of scientists, engineers, and problem solvers.
+                    Whether you're passionate about physics, biology, chemistry,
+                    or any other scientific discipline, there's a place for you
+                    here at the Comilla University Science Club. I encourage you
+                    to explore our website, learn about our upcoming events, and
+                    get involved in our vibrant community. Together, we can
+                    unravel the mysteries of the universe and make a positive
+                    impact on the world through the power of science. Thank you
+                    for being a part of our journey, and I look forward to seeing
+                    you at our next event!"
+                  </p>
+                 </div>
+                  <button class="btn btn-danger read-more-button-evan my-2">Read More</button>
+                </div>
+                
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
         <div class="card shadow-lg border border-2 border-danger">
           <div class="row no-gutters">
             <div class="col-md-4">
@@ -376,7 +435,7 @@ $_SESSION["login"] = false;
         </div>
       </div>
       <div class="container my-5">
-        <div class="card shadow-lg border border-2 border-danger">
+        <div class="card shadow-lg border border-2 border-danger ">
           <div class="row no-gutters">
             <div class="col-md-4">
               <img src="assets/evan.jpg" class="card-img h-100 w-100" alt="Your Image" />
