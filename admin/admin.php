@@ -51,7 +51,8 @@ if($_SESSION["login"] == false){
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="events()"><i class="bi bi-caret-right-fill px-2"></i>Events</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="notices()"><i class="bi bi-caret-right-fill px-2"></i>Notices</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Admin Member</li>
-                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Administration Member</li>
+                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Approve Member</li>
+                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Upload Images</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-shield-lock-fill px-2"></i>Password Update</li>
                     <li class="mx-3 btn btn-danger  fw-bold px-2 py-1 my-1" onclick="logOut()"><i class="bi bi-box-arrow-in-right px-2"></i>Log Out</li>
                 </ul>

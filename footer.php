@@ -13,7 +13,7 @@
         <li><a href="noticePage.php" class="custom-link">Notices</a></li>
         <li><a href="gallaryPage.php" class="custom-link">Gallary</a></li>
         <li><a href="memeberPage.php" class="custom-link">Member</a></li>
-        <li><a href="memeberPage.php" class="custom-link">About</a></li>
+        <li><a href="admin/adminLogin.php" class="custom-link">admin</a></li>
         <li><a href="memeberPage.php" class="custom-link">Activities</a></li>
       </ul>
     </div>
@@ -27,15 +27,26 @@
       <img src="assets/footer.png" alt="Image" class="w-100 my-1 rounded-circle border border-light">
     </div>
     <!-- Contact -->
+    <style>
+      a {
+      text-decoration: none;
+      color:white;
+      }
+      a:hover{
+        color:yellow;
+        font-size:20px;
+      }
+    </style>
     <div class="col col-md-3">
       <h4 class="fw-bold text-center p-1 border border-light rounded">
         <i class="bi bi-caret-right-fill"></i> <i>Follow Us</i>
       </h4>
-      <div class="text-center">
-        <i class="bi bi-facebook px-2"></i>
-        <i class="bi bi-linkedin px-2"></i>
-        <i class="bi bi-twitter px-2"></i>
-        <i class="bi bi-instagram px-2"></i>
+      <div class="text-center ">
+        <a href="https://www.facebook.com/ComillaUniversityScienceClub?mibextid=9R9pXO" class="link-icon"><i class="bi bi-facebook px-2"></i></a>
+        <a href="https://www.linkedin.com" class="link-icon"><i class="bi bi-linkedin px-2"></i></a>
+        <a href="https://www.twitter.com" class="link-icon"><i class="bi bi-twitter px-2"></i></a>
+        <a href="https://www.instagram.com" class="link-icon"><i class="bi bi-instagram px-2"></i></a>
+    
       </div>
       <hr />
       <h4 class="fw-bold text-center p-1 border border-light rounded">
@@ -43,10 +54,11 @@
       </h4>
       <div class="text-center">
         <ul class="list-unstyled text-center">
-          <li><i class="bi bi-envelope-at"></i> cousc2015@gmail.com</li>
-          <li><i class="bi bi-telephone-fill"></i> 8801714-777777</li>
-          <li><i class="bi bi-whatsapp"></i> 8801717-565656</li>
-          <li><i class="bi bi-browser-chrome"></i> www.cousc.org</li>
+          <li><i class="bi bi-envelope-at"></i> couscienceclub2015@gmail.com</li>
+          <li><i class="bi bi-telephone-fill"></i> 01521-324541 (Aman) </li>
+          <li><i class="bi bi-telephone-fill"></i> 01813-387608 (Jahid Evan)</li>
+          <li><i class="bi bi-whatsapp"></i> 01813-387608</li>
+          <li><i class="bi bi-browser-chrome"></i> <a href="https://www.cousc.org/" class="link-icon">www.cousc.org</a></li>
         </ul>
       </div>
     </div>
