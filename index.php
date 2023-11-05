@@ -253,9 +253,9 @@ $_SESSION["login"] = false;
       <div class="d-flex align-items-center justify-content-center gap-2 my-2">
 
         <div class="row row-cols-1">
-          <a class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2">Alumni Association <i
+          <a href="alumni.php" class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2">Alumni Association <i
               class="bi bi-arrow-up-right-square-fill"></i></a>
-          <a class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2 ">Our Activities <i
+          <a href="gallaryPage.php" class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2 ">Our Activities <i
               class="bi bi-arrow-up-right-square-fill"></i></a>
           <a class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2 ">CoUSC Admnistration <i
               class="bi bi-arrow-up-right-square-fill"></i></a>
@@ -284,7 +284,7 @@ $_SESSION["login"] = false;
     <!-- Images -->
 
     <!-- Section -->
-    <div class="container my-5">
+    <!-- <div class="container my-5">
       <div class="card shadow-lg border border-2 border-danger ">
         <div class="row no-gutters">
           <div class="col-md-4">
@@ -342,7 +342,7 @@ $_SESSION["login"] = false;
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="container my-5">
       <div class="card shadow-lg border border-2 border-danger">
         <div class="row no-gutters">
@@ -501,6 +501,22 @@ $_SESSION["login"] = false;
         }
       });
     });
+  </script>
+  <script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   const button = document.querySelector(".read-more-button");
+    //   const hiddenContent = document.querySelector(".hidden-content");
+
+    //   button.addEventListener("click", function () {
+    //     if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+    //       hiddenContent.style.display = "block";
+    //       button.textContent = "Read Less";
+    //     } else {
+    //       hiddenContent.style.display = "none";
+    //       button.textContent = "Read More";
+    //     }
+    //   });
+    // });
     document.addEventListener("DOMContentLoaded", function () {
       const button = document.querySelector(".read-more-button-evan");
       const hiddenContent = document.querySelector(".hidden-content-evan");
@@ -518,20 +534,20 @@ $_SESSION["login"] = false;
     });
   </script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const button = document.querySelector(".read-more-button");
-      const hiddenContent = document.querySelector(".hidden-content");
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   const button = document.querySelector(".read-more-button");
+    //   const hiddenContent = document.querySelector(".hidden-content");
 
-      button.addEventListener("click", function () {
-        if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
-          hiddenContent.style.display = "block";
-          button.textContent = "Read Less";
-        } else {
-          hiddenContent.style.display = "none";
-          button.textContent = "Read More";
-        }
-      });
-    });
+    //   button.addEventListener("click", function () {
+    //     if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+    //       hiddenContent.style.display = "block";
+    //       button.textContent = "Read Less";
+    //     } else {
+    //       hiddenContent.style.display = "none";
+    //       button.textContent = "Read More";
+    //     }
+    //   });
+    // });
     document.addEventListener("DOMContentLoaded", function () {
       const button = document.querySelector(".read-more-button-aman");
       const hiddenContent = document.querySelector(".hidden-content-aman");

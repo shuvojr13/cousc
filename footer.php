@@ -13,7 +13,7 @@
         <li><a href="noticePage.php" class="custom-link">Notices</a></li>
         <li><a href="gallaryPage.php" class="custom-link">Gallary</a></li>
         <li><a href="memeberPage.php" class="custom-link">Member</a></li>
-        <li><a href="admin/adminLogin.php" class="custom-link">admin</a></li>
+        <li><a href="admin/adminLogin.php" class="custom-link">Admin</a></li>
         <li><a href="memeberPage.php" class="custom-link">Activities</a></li>
       </ul>
     </div>

@@ -20,6 +20,11 @@ CREATE TABLE admins (
     password VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE gallary (
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   image VARCHAR(255)
+);
+
 INSERT INTO admins (username, password) VALUES ('admin', '@CoU2023#');
 
 
