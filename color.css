@@ -1,0 +1,15 @@
+.color-text{
+background-color:rgb(73, 14, 112);
+}
+
+.text-justify{
+text-align: justify;
+}
+
+/* .hover-div:hover{
+background-color: rgb(97, 9, 179);
+color:white;
+} */
+.varsity , .school{
+display:none;
+}

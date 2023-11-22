@@ -253,11 +253,11 @@ $_SESSION["login"] = false;
       <div class="d-flex align-items-center justify-content-center gap-2 my-2">
 
         <div class="row row-cols-1">
-          <a href="alumni.php" class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2">Alumni Association <i
+          <a href="alumni.php" class="col btn btn-success rounded fs-4 shadow   border fw-bold p-2">Alumni Association <i
               class="bi bi-arrow-up-right-square-fill"></i></a>
           <a href="gallaryPage.php" class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2 ">Our Activities <i
               class="bi bi-arrow-up-right-square-fill"></i></a>
-          <a class="col btn btn-danger rounded fs-4 shadow   border fw-bold p-2 ">CoUSC Admnistration <i
+          <a class="col btn btn-primary rounded fs-4 shadow   border fw-bold p-2 ">CoUSC Admnistration <i
               class="bi bi-arrow-up-right-square-fill"></i></a>
         </div>
 

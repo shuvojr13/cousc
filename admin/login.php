@@ -39,13 +39,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if (validate_password($password)) {
-        $_SESSION["login_error"] = false;
-      } else {
-        echo '<script>alert("Your password is invalid. Please enter a strong password with at least 6 characters, including a mix of upper and lowercase letters, numbers, and special characters.");</script>';
-        $_SESSION["login_error"] = true;
+    // if (validate_password($password)) {
+    //     $_SESSION["login_error"] = false;
+    //   } else {
+    //     echo '<script>alert("Your password is invalid. Please enter a strong password with at least 6 characters, including a mix of upper and lowercase letters, numbers, and special characters.");</script>';
+    //     $_SESSION["login_error"] = true;
        
-    }
+    // }
     if (validateAdminLogin($username, $password, $conn)) {
         $_SESSION["login_error"] = false;
         $_SESSION["login"] = true;

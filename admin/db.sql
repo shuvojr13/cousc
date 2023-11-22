@@ -25,6 +25,25 @@ CREATE TABLE gallary (
    image VARCHAR(255)
 );
 
+CREATE TABLE member (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    dob DATE NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    mobile VARCHAR(20) NOT NULL,
+    science_interest TEXT,
+    science_experience TEXT,
+    transection_id VARCHAR(50) NOT NULL,
+    institution VARCHAR(100),
+    session VARCHAR(50),
+    department VARCHAR(50),
+    class VARCHAR(50)
+
+);
+
+
+
 INSERT INTO admins (username, password) VALUES ('admin', '@CoU2023#');
 
 

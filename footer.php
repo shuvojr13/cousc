@@ -9,12 +9,12 @@
         <i><i class="bi bi-link-45deg"></i> Quick Links</i>
       </h4>
       <ul class="list-unstyled text-center">
-        <li><a href="eventPage.php" class="custom-link">Events</a></li>
-        <li><a href="noticePage.php" class="custom-link">Notices</a></li>
-        <li><a href="gallaryPage.php" class="custom-link">Gallary</a></li>
-        <li><a href="memeberPage.php" class="custom-link">Member</a></li>
-        <li><a href="admin/adminLogin.php" class="custom-link">Admin</a></li>
-        <li><a href="memeberPage.php" class="custom-link">Activities</a></li>
+        <li><a href="eventPage.php" class="custom-link rounded">Events</a></li>
+        <li><a href="noticePage.php" class="custom-link rounded">Notices</a></li>
+        <li><a href="gallaryPage.php" class="custom-link  rounded">Gallary</a></li>
+        <li><a href="memeberPage.php" class="custom-link  rounded">Member</a></li>
+        <li><a href="admin/adminLogin.php" class="custom-link rounded">Admin</a></li>
+        <li><a href="memeberPage.php" class="custom-link  rounded">Activities</a></li>
       </ul>
     </div>
     <!-- Here We Work -->
@@ -64,7 +64,7 @@
     </div>
   </div>
   <hr />
-  <p class="text-center">Copyright &copy; CoUSC | Developed by Shuvo</p>
+  <p class="text-center">Copyright &copy; <b>CoUSC</b> | Developed by <b>SHUVO</b></p>
 </div>
 </footer>
 <style>
@@ -82,10 +82,11 @@
           color: lightgray;
         }
         .custom-link:hover {
-          color: orange;
-          padding: 5px;
+          color: white;
+          padding: 5px 15px;
           font-size: 18px;
-          text-decoration: underline;
+          background-color: blueviolet;
+
         }
         .resize:hover{
           padding:20px;
@@ -98,5 +99,8 @@
         }
         .bg-footer{
           background-color:rgb(32, 7, 56);
+        }
+        h4{
+        background-color: rgb(62, 17, 83);
         }
       </style>
