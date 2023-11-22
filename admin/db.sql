@@ -30,18 +30,19 @@ CREATE TABLE member (
     name VARCHAR(100) NOT NULL,
     dob DATE NOT NULL,
     gender VARCHAR(10) NOT NULL,
+    image VARCHAR(255),
     email VARCHAR(100) NOT NULL,
     mobile VARCHAR(20) NOT NULL,
+    batch VARCHAR(50) NOT NULL,
+    roll VARCHAR(50) NOT NULL,
+    session VARCHAR(50) NOT NULL,
+    department VARCHAR(50) NOT NULL,
     science_interest TEXT,
     science_experience TEXT,
-    transection_id VARCHAR(50) NOT NULL,
-    institution VARCHAR(100),
-    session VARCHAR(50),
-    department VARCHAR(50),
-    class VARCHAR(50)
-
+    future_plans TEXT,
+    account_number VARCHAR(50) NOT NULL,
+    transection_id VARCHAR(50) NOT NULL
 );
-
 
 
 INSERT INTO admins (username, password) VALUES ('admin', '@CoU2023#');

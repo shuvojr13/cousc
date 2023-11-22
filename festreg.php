@@ -68,34 +68,77 @@
                             <!-- Academic -->
                             <h4 class="bg-white ">Academic Details</h4>
                             <hr>
+                            <div class="button d-flex">
+                                <div class="p-2 border  border-1 fw-bold hover-div1" onclick="toggleDetails2()">
+                                    School/College</div>
+                                <div class="p-2 border  border-1 fw-bold hover-div2" onclick="toggleDetails1()">
+                                    University</div>
+                            </div>
+                            <div class="varsity">
+                                <div class="mb-3 bg-light p-2 ">
+                                    <label for="institution" class="form-label fw-bold">Institution name</label>
+                                    <input type="text" class="form-control" id="name" name="institution" placeholder="Enter institution name" required>
+                                </div>
+                                <div class="mb-3 bg-light p-2 ">
+                                    <label for="session" class="form-label  fw-bold">Session </label>
+                                    <input type="text" class="form-control" id="session" name="session" placeholder="Enter your session" required>
+                                </div>
+                                <div class="mb-3 bg-light p-2 ">
+                                    <select class="form-select" name="department" aria-label="Default select example">
+                                        <option selected>Select Your Department</option>
+                                        <option value="ICT">ICT</option>
+                                        <option value="CSE">CSE</option>
+                                        <option value="Mathmatics">Mathmatics</option>
+                                        <option value="Physics">Physics</option>
+                                        <option value="Pharmacy">Pharmacy</option>
+                                        <option value="Chemistry">Chemistry</option>
+                                        <option value="Statistic">Statistic</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="school">
+                                <div class="mb-3 bg-light p-2 ">
+                                    <label for="institution" class="form-label fw-bold">Institution name</label>
+                                    <input type="text" class="form-control" id="name" name="institution" placeholder="Enter institution name" required>
+                                </div>
+                                <div class="mb-3 bg-light p-2 ">
+                                    <label for="year-level" class="form-label fw-bold">Class</label>
+                                    <input type="text" class="form-control" id="name" name="year-level" placeholder="Enter Class" required>
+                                </div>
+                            </div>
+                            <script>
+                                function toggleDetails1() {
+                                    var details1 = document.querySelector('.varsity');
+                                    var details2 = document.querySelector('.school');
+                                    var btn1 = document.querySelector('.hover-div2');
+                                    var btn2 = document.querySelector('.hover-div1');
+
+                                    details1.style.display = 'block';
+                                    details2.style.display = 'none';
+                                    btn1.style.backgroundColor = 'green';
+                                    btn2.style.backgroundColor = 'white';
+                                    btn1.style.color = 'white';
+                                    btn2.style.color = 'black';
 
 
-                            <div class="mb-3 bg-light p-2 ">
-                                <label for="batch" class="form-label fw-bold">University Batch</label>
-                                <input type="text" class="form-control" id="name" name="batch" placeholder="Enter your batch " required>
-                            </div>
-                            <div class="mb-3 bg-light p-2 ">
-                                <label for="roll" class="form-label fw-bold">Roll / Reg. No</label>
-                                <input type="text" class="form-control" id="name" name="roll" placeholder="Enter Your Roll " required>
-                            </div>
-                            <div class="mb-3 bg-light p-2 ">
-                                <label for="session" class="form-label  fw-bold">Session </label>
-                                <input type="text" class="form-control" id="session" name="session" placeholder="Enter your session" required>
-                            </div>
-                            <div class="mb-3 bg-light p-2 ">
-                                <select class="form-select" name="department" aria-label="Default select example">
-                                    <option selected>Select Your Department</option>
-                                    <option value="ICT">ICT</option>
-                                    <option value="CSE">CSE</option>
-                                    <option value="Mathmatics">Mathmatics</option>
-                                    <option value="Physics">Physics</option>
-                                    <option value="Pharmacy">Pharmacy</option>
-                                    <option value="Chemistry">Chemistry</option>
-                                    <option value="Statistic">Statistic</option>
-                                </select>
-                            </div>
+                                }
+
+                                function toggleDetails2() {
+                                    var details1 = document.querySelector('.varsity');
+                                    var details2 = document.querySelector('.school');
+                                    var btn1 = document.querySelector('.hover-div2');
+                                    var btn2 = document.querySelector('.hover-div1');
+
+                                    details2.style.display = 'block';
+                                    details1.style.display = 'none';
+                                    btn2.style.backgroundColor = 'green';
+                                    btn1.style.backgroundColor = 'white';
+                                    btn2.style.color = 'white';
+                                    btn1.style.color = 'black';
 
 
+                                }
+                            </script>
 
                             <hr>
                             <div class="mb-3  p-2">
@@ -106,15 +149,7 @@
                                 <label for="science_experience" class="form-label fw-bold">Relevant Background or Experiences in Science-related Activities:</label>
                                 <textarea id="science_experience" name="science_experience" rows="4" cols="50" placeholder="Enter your experiences"></textarea>
                             </div>
-                            <!-- ... (other form fields) ... -->
-
-                            <div class="mb-3 p-2">
-                                <label for="futurePlans" class="form-label fw-bold">Brief explanation about your future plans and activities as a club member:</label><br>
-                                <textarea id="futurePlans" name="futurePlans" rows="4" cols="50"></textarea>
-                            </div>
-
-                            <!-- ... (rest of the form) ... -->
-
+                            
                             <!-- Payment Details -->
                             <br>
                             <div class="mb-3  p-2 color-text rounded">
@@ -139,15 +174,6 @@
                                     ডি নিচের ইনপুট ফিল্ডে দিতে হবে। রেজিষ্ট্রেশন ফিঃ ১০০ টাকা + অনলাইন ভ্যাট ৫ টাকা (
                                     ১০৫ টাকা) </p>
                             </div>
-                            <!-- ... (other form fields) ... -->
-
-                            <div class="mb-3 bg-light p-2">
-                                <label for="accountNumber" class="form-label fw-bold">Bkash/Rocket/Nagad Account No.</label>
-                                <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account No." required>
-                            </div>
-
-                            <!-- ... (rest of the form) ... -->
-
                             <div class="mb-3 bg-light p-2">
                                 <label for="payment" class="form-label ">B-kash/Rocket/Nagad Transaction ID <b>( BDT
                                         105.00 Taka)</b></label>
@@ -179,51 +205,47 @@
 
 
 
-
-
 <?php
+
 require_once "admin/database.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $name = $_POST['name'];
+    $dob = $_POST['dob'];
+    $gender = $_POST['gender'];
+    $email = $_POST['email'];
+    $mobile = $_POST['mobile'];
+    $scienceInterest = $_POST['scienceInterest'];
+    $science_experience = $_POST['science_experience'];
+    $transection_id = $_POST['transection_id'];
 
+    $institution = $_POST['institution'];
+    $session = $_POST['session'];
+    $department = $_POST['department'];
 
-    // Escape user inputs for security
-    function sanitize($data)
-    {
-        global $conn;
-        return mysqli_real_escape_string($conn, $data);
-    }
+    // To prevent SQL injection
+    $name = mysqli_real_escape_string($conn, $name);
+    $dob = mysqli_real_escape_string($conn, $dob);
+    $gender = mysqli_real_escape_string($conn, $gender);
+    $email = mysqli_real_escape_string($conn, $email);
+    $mobile = mysqli_real_escape_string($conn, $mobile);
+    $scienceInterest = mysqli_real_escape_string($conn, $scienceInterest);
+    $science_experience = mysqli_real_escape_string($conn, $science_experience);
+    $transection_id = mysqli_real_escape_string($conn, $transection_id);
 
-    // Retrieve form data
-    $name = sanitize($_POST['name']);
-    $dob = sanitize($_POST['dob']);
-    $gender = sanitize($_POST['gender']);
-    $email = sanitize($_POST['email']);
-    $mobile = sanitize($_POST['mobile']);
-    $batch = sanitize($_POST['batch']);
-    $roll = sanitize($_POST['roll']);
-    $session = sanitize($_POST['session']);
-    $department = sanitize($_POST['department']);
-    $scienceInterest = sanitize($_POST['scienceInterest']);
-    $scienceExperience = sanitize($_POST['science_experience']);
-    $futurePlans = sanitize($_POST['futurePlans']);
-    $accountNumber = sanitize($_POST['accountNumber']);
-    $transection_id = sanitize($_POST['transection_id']);
-    $image = $_FILES['image']['name'];
-    $image_tmp = $_FILES['image']['tmp_name'];
-    $upload_dir = "member/$image";
-    move_uploaded_file($image_tmp, $upload_dir);
+    $institution = mysqli_real_escape_string($conn, $institution);
+    $session = mysqli_real_escape_string($conn, $session);
+    $department = mysqli_real_escape_string($conn, $department);
 
-
-    // SQL query to insert data into member table
-    $sql = "INSERT INTO member (name, dob, gender,image, email, mobile, batch, roll, session, department, science_interest, science_experience, future_plans, account_number, transection_id) 
-            VALUES ('$name', '$dob', '$gender', '$image','$email', '$mobile', '$batch', '$roll', '$session', '$department', '$scienceInterest', '$scienceExperience', '$futurePlans', '$accountNumber', '$transection_id')";
+    $sql = "INSERT INTO member (name, dob, gender, email, mobile, science_interest, science_experience, transection_id, institution, session, department) 
+            VALUES ('$name', '$dob', '$gender', '$email', '$mobile', '$scienceInterest', '$science_experience', '$transection_id', '$institution', '$session', '$department')";
 
     if ($conn->query($sql) === TRUE) {
-?>
+        ?>
         <script>
             window.location.href = 'pdf.php';
         </script>
-<?php
+        <?php
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
