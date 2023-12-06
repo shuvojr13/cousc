@@ -75,7 +75,8 @@
         </table>
         <a href="index.php" class="btn btn-danger">Go Home</a>
     </div>
-    
+    <br>
+    <?php include "footer.php" ?>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
