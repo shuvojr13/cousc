@@ -28,16 +28,18 @@ $conn->close();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg">
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="color.css">
 
 </head>
-
+<?php include"nav.php" ?>
 <body>
     <!-- Displaying the last inserted row data -->
-    <div class="d-flex flex-column justify-content-center align-items-center m-4 p-5 ">
-        <div class="header text-center color-text text-white w-100">
-            <h1 class="fw-bold fs-1 p-2">Comilla University Science Club</h1>
-            <p class="fs-5 fw-bold"><q>Know The Science , Know The Universe</q></p>
+    <div class="bg-light d-flex flex-column justify-content-center align-items-center m-4 p-5 ">
+        <div class="d-flex flex-row mx-auto py-2 align-items-center justify-content-center justify-content-md-between">
+            <img src="assets/cousc.jpeg" alt class="navbar-brand rounded px-2 px-md-4 d-block" height="50px" />
+            <h1 class="text-dark text-center fw-bold">Comilla University Science Club</h1>
+            <img src="assets/cou.png" alt class="navbar-brand rounded-circle px-2 px-md-4 d-block" height="50px" />
         </div>
         <h2 class="bg-danger text-white p-2 w-100 text-center">Member Registration Form</h2>
         <table class="table table-light table-hover table-bordered text-center mx-4">
@@ -91,19 +93,9 @@ $conn->close();
                 <th>Future Plans for CoUSC</th>
                 <td><?= $lastInsertedRow['future_plans'] ?></td>
             </tr>
-            <tr>
-                <th>Transaction ID</th>
-                <td><?= $lastInsertedRow['transection_id'] ?></td>
-            </tr>
-            <tr>
-                <th>Payment A/C No.</th>
-                <td><?= $lastInsertedRow['account_number'] ?></td>
-            </tr>
-            <tr>
-                <th>Reg. Fee</th>
-                <td>100 Taka</td>
-            </tr>
-           
+
+
+
         </table>
         <p class="fs-5 fw-bold" id="msg">Download Your Registration Information. Its must need for upcoming events.</p>
         <!-- ... Your HTML code ... -->

@@ -28,11 +28,11 @@
     </div>
     <!-- Contact -->
     <style>
-      a {
+      footer a {
       text-decoration: none;
       color:white;
       }
-      a:hover{
+      footer a:hover{
         color:yellow;
         font-size:20px;
       }

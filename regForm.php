@@ -10,11 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.jpeg">
+     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="color.css">
 
 </head>
 
 <body class="bg-light">
+    <?php include "nav.php" ?>
+    <br>
     <div class="bg-danger text-white py-4 px-3 text-center">
         <h2 class="fs-1 fw-bold">Member Registration - CoU Science Club, Comilla University</h2>
     </div>
@@ -115,44 +118,7 @@
 
                             <!-- ... (rest of the form) ... -->
 
-                            <!-- Payment Details -->
-                            <br>
-                            <div class="mb-3  p-2 color-text rounded">
-                                <div class="container bg-white">
-                                    <div class="row d-flex align-items-center justify-content-center gap-3">
-                                        <div class="col-3">
-                                            <img src="assets/bkash.webp" class="custom-img w-100" alt="Image 1">
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="assets/nagad.png" class="custom-img w-100" alt="Image 2">
-                                        </div>
-                                        <div class="col-3">
-                                            <img src="assets/rocket.png" class="custom-img w-100" alt="Image 3">
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <p class="text-center text-white fw-bold fs-4 border border-2 rounded p-1">
-                                    Bkash/Rocket/Nagad : 01840655026</p>
-                                <p class="text-justify text-white px-3"><strong>বিঃদ্রঃ</strong> বিকাশ/নগদ/রকেটে
-                                    পেমেন্টের সময় অবশ্যই রেফারেন্স এ একাউন্ট নাম্বার দিতে হবে। পেমেন্টের ট্রানজেকশন আই
-                                    ডি নিচের ইনপুট ফিল্ডে দিতে হবে। রেজিষ্ট্রেশন ফিঃ ১০০ টাকা + অনলাইন ভ্যাট ৫ টাকা (
-                                    ১০৫ টাকা) </p>
-                            </div>
-                            <!-- ... (other form fields) ... -->
-
-                            <div class="mb-3 bg-light p-2">
-                                <label for="accountNumber" class="form-label fw-bold">Bkash/Rocket/Nagad Account No.</label>
-                                <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter Account No." required>
-                            </div>
-
-                            <!-- ... (rest of the form) ... -->
-
-                            <div class="mb-3 bg-light p-2">
-                                <label for="payment" class="form-label ">B-kash/Rocket/Nagad Transaction ID <b>( BDT
-                                        105.00 Taka)</b></label>
-                                <input type="text" class="form-control" id="payment" name="transection_id" placeholder="Enter Transaction ID" required>
-                            </div><br>
+                           
                             <label for="agreement">
                                 <input type="checkbox" id="agreement" name="agreement" required>
                                 I agree to abide by the rules and regulations of Comilla University Science Club.
@@ -168,9 +134,7 @@
 
 
     </div>
-    <div class="container d-flex justify-content-center align-items-center my-3">
-        <a href="index.php" class="btn btn-danger text-center">Go Home</a>
-    </div>
+   
 
     <?php include "footer.php" ?>
 </body>
@@ -206,8 +170,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $scienceInterest = sanitize($_POST['scienceInterest']);
     $scienceExperience = sanitize($_POST['science_experience']);
     $futurePlans = sanitize($_POST['futurePlans']);
-    $accountNumber = sanitize($_POST['accountNumber']);
-    $transection_id = sanitize($_POST['transection_id']);
+    
     $image = $_FILES['image']['name'];
     $image_tmp = $_FILES['image']['tmp_name'];
     $upload_dir = "member/$image";
@@ -215,8 +178,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     // SQL query to insert data into member table
-    $sql = "INSERT INTO member (name, dob, gender,image, email, mobile, batch, roll, session, department, science_interest, science_experience, future_plans, account_number, transection_id) 
-            VALUES ('$name', '$dob', '$gender', '$image','$email', '$mobile', '$batch', '$roll', '$session', '$department', '$scienceInterest', '$scienceExperience', '$futurePlans', '$accountNumber', '$transection_id')";
+    $sql = "INSERT INTO member (name, dob, gender,image, email, mobile, batch, roll, session, department, science_interest, science_experience, future_plans) 
+            VALUES ('$name', '$dob', '$gender', '$image','$email', '$mobile', '$batch', '$roll', '$session', '$department', '$scienceInterest', '$scienceExperience', '$futurePlans')";
 
     if ($conn->query($sql) === TRUE) {
 ?>

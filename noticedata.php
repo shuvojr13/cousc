@@ -8,7 +8,7 @@ $stmt = $conn->prepare($sql);
 $stmt->execute();
 $events = $stmt->fetchAll();
 
-echo '<div class="container row row-cols-1  d-flex justify-content-center align-items-center my-3  p-4 rounded">';
+echo '<div class="container row row-cols-1  d-flex justify-content-center align-items-center my-3  p-4 rounded mx-auto">';
 if(!$events){
     echo "<p class='text-center fw-bold bg-light p-2 fs-1'>No notices found.</p>";
 }

@@ -16,63 +16,15 @@ $_SESSION["login"] = false;
   <title>CoUSC</title>
 </head>
 
+<?php include "nav.php" ?>
 <body>
-  <style>
-    body {
-      background-image: url("assets/bgimg.jpg");
-    }
   
-  </style>
   <!-- <h2 class="text-center border border-4 p-2 m-2">Comilla University Science Club</h2> -->
   <div class="container-fluid">
     <!-- Nav Section -->
-    <div
-      class="header d-flex flex-row mx-auto py-2 align-items-center justify-content-center justify-content-md-between">
-      <img src="assets/cousc.jpeg" alt class="navbar-brand rounded px-2 px-md-4 d-block" height="75px" />
-      <h1 class="text-white text-center fw-bold">Comilla University Science Club</h1>
-      <img src="assets/cou.png" alt class="navbar-brand rounded-circle px-2 px-md-4 d-block" height="75px" />
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark py-2">
-      <div class="container-fluid">
-        <button class="navbar-toggler mb-4" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- <a class="navbar-brand fs-2 px-1" href="#">Comilla University Science Club</a> -->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navitem mx-3 navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active fs-4 px-3 text-center" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item fs-4 px-3 text-center">
-                <a class="nav-link text-white" href="noticePage.php">Notice</a>
-              </li>
-              <li class="nav-item fs-4 px-3 text-center">
-                <a class="nav-link text-white" href="eventPage.php">Events</a>
-              </li>
-              <li class="nav-item fs-4 px-3 text-center">
-                <a class="nav-link text-white" href="memeberPage.php">Executive Member</a>
-              </li>
-              <li class="nav-item fs-4 px-3 text-center">
-                <a class="nav-link text-white" href="gallaryPage.php">Gallary</a>
-              </li>
-              <li class="nav-item fs-4 px-3 text-center">
-                <a class="nav-link text-white" href="regForm.php">Register</a>
-              </li>
-          </ul>
-          <form class="d-flex mx-3">
-            <input class="form-control me-2 px-2 w-100" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-light" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
+   
     <!-- Carousel -->
-    <div class="container-fluid  d-flex justify-content-center my-3">
+    <div class="container-fluid  d-flex justify-content-center min-h-screen my-5" style="max-width:800px; margin:auto;">
       <div id="carouselExampleIndicators" class="container carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -149,7 +101,7 @@ $_SESSION["login"] = false;
         color: rgb(83, 33, 129);
       }
     </style>
-    <div class="container my-4 border border-1 border-dark p-3 bg-white rounded shadow-lg">
+    <div class="container my-4 border border-1 border-dark p-3 bg-white rounded shadow-lg" style="max-width:800px;">
       <h3 class="text-white bg-color text-center rounded p-4">
         Welcome to the World of Innovation: Comilla University Science Club
       </h3>
@@ -343,7 +295,7 @@ $_SESSION["login"] = false;
         </div>
       </div>
     </div> -->
-    <div class="container my-5">
+    <div class="container my-5" >
       <div class="card shadow-lg border border-2 border-danger">
         <div class="row no-gutters">
           <div class="col-md-4">
@@ -487,11 +439,11 @@ $_SESSION["login"] = false;
     }
   </style>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const button = document.querySelector(".read-more-button");
       const hiddenContent = document.querySelector(".hidden-content");
 
-      button.addEventListener("click", function () {
+      button.addEventListener("click", function() {
         if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
           hiddenContent.style.display = "block";
           button.textContent = "Read Less";
@@ -517,11 +469,11 @@ $_SESSION["login"] = false;
     //     }
     //   });
     // });
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const button = document.querySelector(".read-more-button-evan");
       const hiddenContent = document.querySelector(".hidden-content-evan");
 
-      button.addEventListener("click", function () {
+      button.addEventListener("click", function() {
         if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
           hiddenContent.style.display = "block";
           button.textContent = "Read Less";
@@ -548,11 +500,11 @@ $_SESSION["login"] = false;
     //     }
     //   });
     // });
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const button = document.querySelector(".read-more-button-aman");
       const hiddenContent = document.querySelector(".hidden-content-aman");
 
-      button.addEventListener("click", function () {
+      button.addEventListener("click", function() {
         if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
           hiddenContent.style.display = "block";
           button.textContent = "Read Less";

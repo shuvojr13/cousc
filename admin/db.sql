@@ -39,9 +39,8 @@ CREATE TABLE member (
     department VARCHAR(50) NOT NULL,
     science_interest TEXT,
     science_experience TEXT,
-    future_plans TEXT,
-    account_number VARCHAR(50) NOT NULL,
-    transection_id VARCHAR(50) NOT NULL
+    future_plans TEXT
+   
 );
 
 

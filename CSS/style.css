@@ -1,30 +1,25 @@
 *{
     padding:0;
     margin:0;
+    box-sizing:border-box;
     /* background-color:lightgray; */
 }
 .header{
-background-color: rgb(33, 74, 82);
+background-color: #004B8D;
 }
 .navbar{
-background-color: #0d303d;
-}
-.navitem li:hover {
-    border:1px solid gray;
-    border-radius: 20px;
-    padding: 0px 2px;
-    margin:0px 5px;
-    background-color: rgb(33, 74, 82);
+background-color: #223A5E;
 }
 
-#link:hover{
-border:none;
-background-color:none;
+body{
+padding-top:150px;
 }
-#link ul li:hover{
-    border:none;
-    background-color:none;
+@media  (max-width: 768px) {
+    body{
+        padding-top: 230px;
+    }
 }
+
 /* #hero{
 background-image: url('assets/imgcou.jpg');
 } */
