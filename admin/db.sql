@@ -39,7 +39,8 @@ CREATE TABLE member (
     department VARCHAR(50) NOT NULL,
     science_interest TEXT,
     science_experience TEXT,
-    future_plans TEXT
+    future_plans TEXT,
+    is_approved BOOLEAN DEFAULT FALSE,
    
 );
 

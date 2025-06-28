@@ -29,12 +29,7 @@ if($_SESSION["login"] == false){
         .bg-color{
         background-color: #0f033a;
         }
-        .bg-image{
-            background-image: url('../assets/admin1.gif');
-            background-repeat: no-repeat;
-           background-size: cover;
-            
-        }
+        
         a{
             text-decoration: none;
             color:white;
@@ -51,13 +46,13 @@ if($_SESSION["login"] == false){
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="events()"><i class="bi bi-caret-right-fill px-2"></i>Events</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="notices()"><i class="bi bi-caret-right-fill px-2"></i>Notices</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Admin Member</li>
-                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-caret-right-fill px-2"></i>Approve Member</li>
+                    <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="member()"><i class="bi bi-caret-right-fill px-2"></i>Approve Member</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1" onclick="upload()"><i class="bi bi-caret-right-fill px-2"></i>Upload Images</li>
                     <li class="mx-3 btn btn-primary  fw-bold px-2 py-1 my-1"><i class="bi bi-shield-lock-fill px-2"></i>Password Update</li>
                     <li class="mx-3 btn btn-danger  fw-bold px-2 py-1 my-1" onclick="logOut()"><i class="bi bi-box-arrow-in-right px-2"></i>Log Out</li>
                 </ul>
             </div>
-            <div class="col col-md-9 bg-image d-flex align-items-center justify-content-center" >
+            <div class="col col-md-9 bg-light mx-auto " >
                 <div class="" id="root"></div>
             </div>
         </div>
@@ -70,6 +65,12 @@ if($_SESSION["login"] == false){
                 
                   document.getElementById('root').innerHTML = text;
                 }
+                async function member() {
+                  const response = await fetch('member.php');
+                  const text = await response.text();
+                
+                  document.getElementById('root').innerHTML = text;
+                }
                 async function notices() {
                   const response = await fetch('notice.php');
                   const text = await response.text();
@@ -77,7 +78,7 @@ if($_SESSION["login"] == false){
                   document.getElementById('root').innerHTML = text;
                 }
                 async function upload() {
-                  const response = await fetch('upload.php');
+                  const response = await fetch('gallaryUpload.php');
                   const text = await response.text();
                 
                   document.getElementById('root').innerHTML = text;

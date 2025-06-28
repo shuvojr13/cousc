@@ -19,7 +19,7 @@ if(!$events){
 // Render the events data
 foreach ($events as $event) {
    
-    echo '<div class="col col-md-8 border border-3 border-dark rounded my-2 p-3 bg-event shadow">';
+    echo '<div class="col col-md-8 border border-3 border-dark rounded my-2 p-3 bg-event shadow mx-auto">';
     echo '<img src="admin/images/' . $event['image'] . '" alt="' . $event['title'] . '" class="w-100" />';
     echo '<h2 class="title text-white fw-bold  p-2 rounded text-center m-1">' . $event['title'] . '</h2>';
     echo '<p class="text-justify p-2 bg-white m-1">' . $event['description'] . '</p>';

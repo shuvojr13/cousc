@@ -97,10 +97,12 @@ if (isset($_POST['submit'])) {
         // Execute the SQL statement
         $stmt->execute();
 
+        header("Location: admin.php");
     } 
   }
 
 
 // Close the database connection (assuming you've established it in your config.php)
 $conn = null;
+
 ?>

@@ -1,7 +1,7 @@
 <div class="fixed-top">
       <div class="header d-flex flex-row mx-auto py-2 align-items-center justify-content-center justify-content-md-between">
         <img src="assets/cousc.jpeg" alt class="navbar-brand rounded px-2 px-md-4 d-block" height="50px" />
-        <h1 class="text-white text-center fw-bold">Comilla University Science Club</h1>
+        <h3 class="text-white text-center fw-bold">Comilla University Science Club</h3>
         <img src="assets/cou.png" alt class="navbar-brand rounded-circle px-2 px-md-4 d-block" height="50px" />
       </div>
       <p style="margin:auto; text-align: center; background-color: #bb1212; color:white;">Know The Science , Know The Universe</p>
