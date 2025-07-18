@@ -295,7 +295,7 @@ $_SESSION["login"] = false;
         </div>
       </div>
     </div> -->
-    <div class="container my-5" >
+    <!-- <div class="container my-5" >
       <div class="card shadow-lg border border-2 border-danger">
         <div class="row no-gutters">
           <div class="col-md-4">
@@ -415,9 +415,9 @@ $_SESSION["login"] = false;
       </div>
     </div>
 
-    <?php include "footer.php" ?>
-
-  </div>
+    
+  </div> -->
+  <?php include "footer.php" ?>
   <style>
     .paragraph-container {
       max-width: 600px;

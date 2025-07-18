@@ -16,8 +16,8 @@
           <!-- <a class="navbar-brand fs-2 px-1" href="#">Comilla University Science Club</a> -->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navitem mx-3 navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active px-3 text-center" aria-current="page" href="index.php">Home</a>
+              <li class="nav-item px-3 text-center">
+                <a class="nav-link active  " aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item  px-3 text-center">
                 <a class="nav-link text-white" href="noticePage.php">Notice</a>
@@ -51,7 +51,11 @@
     font-size:16px;
     border:1px solid lightblue;
     border-radius: 10px;
+    margin:5px auto;
     }
+   
+      
+    
   </style>
 
     

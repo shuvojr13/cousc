@@ -7,8 +7,10 @@ require_once "database.php";
 $sql = "SELECT * FROM notice";
 $result = $conn->query($sql);
 ?>
-        <div class="d-flex justify-content-center align-items-center m-4 p-4">
-            <a href="noticeForm.php" class="btn btn-danger fs-3 px-4 fw-bold">Add Notice</a>
+        <h3 class="text-center mt-4 mb-3">Manage News</h3>
+        <p class="text-center">Here you can manage the news posted on the site. You can add, view, and delete news items.</p>
+        <div class="d-flex justify-content-center align-items-center m-4 p-4 rounded shadow-lg">
+            <a href="noticeForm.php" class="btn btn-danger fs-3 px-4 fw-bold">Add News</a>
         </div>
 <?php
 if ($result->num_rows > 0) {

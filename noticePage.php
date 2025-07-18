@@ -20,6 +20,7 @@
     }
     .title {
         background: linear-gradient(45deg, rgb(84, 51, 138), rgb(51, 95, 136));
+        
       }
       .bgn-color{
         background-color:rgb(223, 219, 247);
